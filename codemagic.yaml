@@ -9,5 +9,3 @@ workflows:
         script: pod Install
     artifacts:
       - build/ios/ipa/*.ipa
-    ios:
-      export_method: ad-hoc    
