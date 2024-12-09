@@ -6,6 +6,6 @@ workflows:
       cocoapods : default
     scripts:
       - name: Install Dependencies
-        script: pod Install
+        script: pod install
     artifacts:
       - build/ios/ipa/*.ipa
