@@ -1,0 +1,13 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    environment:
+      xcode: latest
+      cocoapods : default
+    scripts:
+      - name: Install Dependencies
+        script: pod Install
+    artifacts:
+      - build/ios/ipa/*.ipa
+    ios:
+      export_method: ad-hoc    
